@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "baseUrl": "./",
+    "removeComments": false,
+    "strictNullChecks": true,
+    "paths": {},
+    "lib": [
+      "es2015.core",
+      "es2015.promise",
+      "es2015.iterable",
+      "es5"
+    ]
+  },
+  "atom": {
+    "rewriteTsconfig": false
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false
+}
+
