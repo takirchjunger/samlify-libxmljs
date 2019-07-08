@@ -10,7 +10,7 @@ interface IValidatorContext {
 }
 
 export default class LibxmljsValidator implements IValidatorContext {
-  protected validate(xml: string) {
+  public validate(xml: string) {
     return new Promise((resolve, reject) => {
       process.chdir(path.resolve(__dirname, 'schemas'));
       const xmlDoc = mod.parseXml(xml);
