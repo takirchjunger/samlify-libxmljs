@@ -1,6 +1,6 @@
+import * as fs from 'fs';
 import * as mod from 'libxmljs';
 import * as path from 'path';
-import * as fs from 'fs';
 
 const xsd = fs.readFileSync(path.resolve(__dirname, 'schemas/saml-schema-protocol-2.0.xsd'), 'utf-8');
 const xsdDoc = mod.parseXml(xsd);
@@ -10,7 +10,7 @@ interface IValidatorContext {
 }
 
 export default class LibxmljsValidator implements IValidatorContext {
-  validate(xml: string) {
+  protected validate(xml: string) {
     return new Promise((resolve, reject) => {
       process.chdir(path.resolve(__dirname, 'schemas'));
       const xmlDoc = mod.parseXml(xml);
