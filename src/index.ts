@@ -9,7 +9,7 @@ export default {
       process.chdir(path.resolve(__dirname, './schemas'));
       const xsdDoc = mod.parseXml(xsd);
       const xmlDoc = mod.parseXml(xml);
-      const result = xmlDocValid.validate(xsdDoc);
+      const result = xmlDoc.validate(xsdDoc);
       if (result) {
         return resolve('SUCCESS_VALIDATE_XML');
       } else {
