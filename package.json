@@ -1,20 +1,35 @@
 {
   "name": "samlify-libxmljs",
   "version": "1.0.0",
-  "description": "Validator module powered by libxmljs",
-  "main": "index.js",
+  "description": "Samlify validator module powered by libxmljs",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "yarn run clean && yarn run cp-schemas && tsc",
-    "cp-schemas": "mkdir -p build/schemas && cp -R schemas build",
-    "clean": "rm -rf build"
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "postversion" : "git push && git push --tags",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takirchjunger/samlify-libxmljs"
   },
   "author": "Tom Kirchjünger",
   "license": "MIT",
   "dependencies": {
     "libxmljs": "^0.19.5"
   },
+  "files": ["lib/**/*"],
   "devDependencies": {
+    "@types/libxmljs": "^0.18.3",
     "@types/node": "^12.0.4",
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.1"
   }
 }
