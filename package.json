@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "tsc && npm run copy",
-    "copy": "cpr src/schemas build/schemas -d",
+    "copy": "cpr src/schemas lib/schemas -d",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "postversion": "git push && git push --tags",
