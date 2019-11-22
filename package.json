@@ -24,6 +24,13 @@
   },
   "author": "Tom Kirchjunger <tom.kirchjunger@topicus.nl>",
   "license": "MIT",
+  "contributors": [
+    {
+      "name": "Tom Kirchjünger",
+      "email": "tom.kirchjunger@topicus.nl",
+      "url": "https://github.com/takirchjunger/"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/takirchjunger/samlify-libxmljs"
