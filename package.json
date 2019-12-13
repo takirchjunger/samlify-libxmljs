@@ -1,6 +1,6 @@
 {
   "name": "samlify-libxmljs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Samlify validator module powered by libxmljs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -42,12 +42,11 @@
     "libxmljs": "^0.19.7"
   },
   "devDependencies": {
-    "@types/libxmljs": "^0.18.4",
-    "@types/node": "^12.12.11",
-    "cpr": "^3.0.1",
+    "@types/libxmljs": "^0.18.5",
+    "@types/node": "^12.12.17",
     "prettier": "^1.19.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.3"
   }
 }
