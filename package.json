@@ -42,12 +42,12 @@
     "libxmljs": "^0.19.7"
   },
   "devDependencies": {
-    "@types/libxmljs": "^0.18.6",
-    "@types/node": "^14.14.21",
-    "cpr": "^3.0.1",
-    "prettier": "^2.2.1",
-    "tslint": "^6.1.3",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.1.3"
+    "@types/libxmljs": "0.18.6",
+    "@types/node": "14.14.30",
+    "cpr": "3.0.1",
+    "prettier": "2.2.1",
+    "tslint": "6.1.3",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "4.1.5"
   }
 }
