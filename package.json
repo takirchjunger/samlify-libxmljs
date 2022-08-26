@@ -42,7 +42,7 @@
     "libxmljs": "0.19.7"
   },
   "devDependencies": {
-    "@types/libxmljs": "0.18.7",
+    "@types/libxmljs": "0.18.8",
     "@types/node": "16.11.56",
     "cpr": "3.0.1",
     "prettier": "2.7.1",
