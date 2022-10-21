@@ -1,6 +1,6 @@
 {
   "name": "samlify-libxmljs",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Samlify validator module powered by libxmljs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
