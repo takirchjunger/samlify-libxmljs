@@ -39,7 +39,7 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "libxmljs": "1.0.9"
+    "libxmljs": "1.0.11"
   },
   "devDependencies": {
     "@types/libxmljs": "~0.18.8",
