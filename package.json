@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@types/libxmljs": "~0.18.8",
-    "@types/node": "~20.5.7",
+    "@types/node": "~20.17.0",
     "cpr": "~3.0.1",
     "prettier": "~3.0.2",
     "tslint": "~6.1.3",
